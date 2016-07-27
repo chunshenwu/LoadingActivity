@@ -28,7 +28,7 @@ final class LoadingAsyncTask extends AsyncTask<URL, Integer, Boolean> {
     private Status mStatus = null;
     private OnListener mOnListener = null;
 
-    public LoadingAsyncTask() {
+    LoadingAsyncTask() {
         mStatus = Status.NONE;
 
     }

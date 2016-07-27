@@ -7,7 +7,7 @@ import android.content.DialogInterface;
 /**
  * Created by jason_wu on 7/27/16.
  */
-public class LoadingProgressDialog extends ProgressDialog implements LoadingAsyncTask.OnListener{
+class LoadingProgressDialog extends ProgressDialog implements LoadingAsyncTask.OnListener{
     public LoadingProgressDialog(Context context) {
         super(context);
     }

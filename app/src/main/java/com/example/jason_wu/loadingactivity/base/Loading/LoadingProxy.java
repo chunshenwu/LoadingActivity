@@ -13,32 +13,32 @@ public class LoadingProxy {
 
     private ArrayList<Integer> mList;
     private LoadingProgressDialog mLoadingProgressDialog;
-    private LoadingAsyncTask mmLoadingAsyncTask;
+    private LoadingAsyncTask mLoadingAsyncTask;
 
     public LoadingProxy(final Activity activity) {
-        mmLoadingAsyncTask = new LoadingAsyncTask();
+        mLoadingAsyncTask = new LoadingAsyncTask();
         mLoadingProgressDialog = new LoadingProgressDialog(activity);
-        mmLoadingAsyncTask.setOnListener(mLoadingProgressDialog);
+        mLoadingAsyncTask.setOnListener(mLoadingProgressDialog);
         mList = new ArrayList<>();
     }
 
     public void startLoading() {
-        mmLoadingAsyncTask.startLoading();
+        mLoadingAsyncTask.startLoading();
     }
 
     public boolean isLoadingFinish() {
-        return mmLoadingAsyncTask.isLoadingFinish();
+        return mLoadingAsyncTask.isLoadingFinish();
     }
 
-    public void addCode(BaseLoadingActivity baseLoadingActivity) {
-        final Integer activityHashCode = baseLoadingActivity.hashCode();
+    public void addCode(Activity activity) {
+        final Integer activityHashCode = activity.hashCode();
         if (!mList.contains(activityHashCode)) {
             mList.add(activityHashCode);
         }
     }
 
-    public void removeCode(BaseLoadingActivity baseLoadingActivity) {
-        final Integer activityHashCode = baseLoadingActivity.hashCode();
+    public void removeCode(Activity activity) {
+        final Integer activityHashCode = activity.hashCode();
         if (mList.contains(activityHashCode)) {
             mList.remove(activityHashCode);
         }

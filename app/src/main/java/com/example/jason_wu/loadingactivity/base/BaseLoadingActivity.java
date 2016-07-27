@@ -2,6 +2,7 @@ package com.example.jason_wu.loadingactivity.base;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
 
 import com.example.jason_wu.loadingactivity.R;
 import com.example.jason_wu.loadingactivity.base.loading.LoadingProxy;
@@ -10,7 +11,6 @@ public abstract class BaseLoadingActivity extends AppCompatActivity {
 
 
     private static LoadingProxy mLoadingProxy = null;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
