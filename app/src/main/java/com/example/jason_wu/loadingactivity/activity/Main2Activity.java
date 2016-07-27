@@ -1,8 +1,11 @@
-package com.example.jason_wu.loadingactivity;
+package com.example.jason_wu.loadingactivity.activity;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.example.jason_wu.loadingactivity.base.BaseLoadingActivity;
+import com.example.jason_wu.loadingactivity.R;
 
 public class Main2Activity extends BaseLoadingActivity {
 

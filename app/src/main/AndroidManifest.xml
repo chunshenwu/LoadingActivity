@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashingActivity">
+        <activity android:name=".activity.SplashingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -17,10 +17,10 @@
         </activity>
 
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
         </activity>
 
-        <activity android:name=".Main2Activity">
+        <activity android:name=".activity.Main2Activity">
         </activity>
 
 

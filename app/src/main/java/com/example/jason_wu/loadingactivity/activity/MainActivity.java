@@ -1,12 +1,12 @@
-package com.example.jason_wu.loadingactivity;
+package com.example.jason_wu.loadingactivity.activity;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.util.AttributeSet;
 import android.view.View;
-import android.widget.ProgressBar;
+
+import com.example.jason_wu.loadingactivity.base.BaseLoadingActivity;
+import com.example.jason_wu.loadingactivity.R;
 
 public class MainActivity extends BaseLoadingActivity {
 

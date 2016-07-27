@@ -1,8 +1,10 @@
-package com.example.jason_wu.loadingactivity;
+package com.example.jason_wu.loadingactivity.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.jason_wu.loadingactivity.R;
 
 public class SplashingActivity extends AppCompatActivity {
 
