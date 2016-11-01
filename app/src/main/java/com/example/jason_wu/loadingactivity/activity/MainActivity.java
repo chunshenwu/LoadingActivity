@@ -22,6 +22,8 @@ public class MainActivity extends BaseLoadingActivity {
                 finish();
             }
         });
+
+        //TEST branch
     }
 
     @Override
