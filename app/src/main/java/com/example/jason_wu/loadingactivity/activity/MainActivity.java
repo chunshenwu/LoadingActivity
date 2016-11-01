@@ -23,7 +23,7 @@ public class MainActivity extends BaseLoadingActivity {
             }
         });
 
-        //TEST branch 1
+        //TEST branch 1 2
     }
 
     @Override
